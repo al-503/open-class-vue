@@ -1,17 +1,21 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <nav>
+      <h1>Welcome on my first Vue page</h1>
+      <NavLink url="/" text="Home" />
+      <NavLink url="/about" text="About" />
+      <NavLink url="/contact" text="Contact" />
+    </nav>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import NavLink from'./components/HomeLink.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    NavLink
   }
 }
 </script>
